@@ -1,0 +1,108 @@
+body{
+    background-color: white;
+}
+.nadpis-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}   
+h1{
+    font-family: Roboto;
+    font-size: 1.5rem;
+    background-color: red;
+    background-size: cover;
+    border-radius: 10px 10px 10px 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.divider-block{
+    display: block;
+    background-color: black;
+    width: 100%;
+    height: 10px;
+    padding-bottom: 1rem;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 1140px;
+    height: auto;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+}
+.flex-container img{
+    width: auto;
+    height: auto;
+}
+.flex-container p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 1rem 1rem;
+}
+.grid-container{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+    max-width: 1140px;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 1rem 2rem;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: auto;
+    padding-left: 10px;
+}
+.grid-item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1rem;
+    text-wrap: wrap;
+}
+.grid-item2 img {
+    height: 125px;
+    width: auto;
+}
+@media (width >= 850px) {
+    .flex-container {
+        flex-direction: row;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .flex-container img {
+        width: 300px;
+        height: auto;
+    }
+  }
+  
+  @media (width >= 1140px) {
+    .container {
+      padding: 0;
+    }
+  }
